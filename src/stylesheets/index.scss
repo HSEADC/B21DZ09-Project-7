@@ -1,11 +1,10 @@
 body.index {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  font-family: 'PT Root UI', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
 
-  & > div,
-  & > a {
-    margin: 10px 0;
-  }
+h1 {
+  font-size: 36px;
+  margin-top: 128px;
+  margin-left: 20px;
 }

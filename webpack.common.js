@@ -92,6 +92,13 @@ module.exports = {
       filename: './pages/page.html',
       chunks: ['page']
     }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/map.html',
+      filename: './pages/map.html',
+      chunks: ['map']
+    }),
 
     // Partials
     new HtmlWebpackPartialsPlugin([
