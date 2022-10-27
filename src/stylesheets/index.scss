@@ -1,11 +1,60 @@
 body.index {
-  font-family: 'Pragmatica', Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  background: --black;
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: 'Pragmatica', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+  }
 }
-
 h1 {
-  font-size: 36px;
-  margin-top: 128px;
-  margin-left: 20px;
+  width: 720px;
+  height: 60px;
+  margin-left: 85px;
+  margin-top: 80px;
+  font-size: 140px;
+}
+#rec1 {
+  box-sizing: border-box;
+  position: absolute;
+  width: 210px;
+  height: 204px;
+  margin-left: 1000px;
+  top: 140px;
+  border: 0.5px;
+  border-style: solid;
+  border-color: --black;
+  border-radius: 10px;
+}
+#rec2 {
+  box-sizing: border-box;
+  position: absolute;
+  width: 210px;
+  height: 204px;
+  margin-left: 1210px;
+  top: 340px;
+  border: 0.5px;
+  border-style: solid;
+  border-color: --black;
+  border-radius: 10px;
+}
+#rec3 {
+  box-sizing: border-box;
+  position: absolute;
+  width: 210px;
+  height: 204px;
+  margin-left: 900px;
+  top: 540px;
+  background: black;
+  border-radius: 10px;
+}
+#rec4 {
+  box-sizing: border-box;
+  position: absolute;
+  width: 210px;
+  height: 204px;
+  margin-left: 690px;
+  top: 740px;
+  background: #ec2529;
+  border-radius: 10px;
 }
