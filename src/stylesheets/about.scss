@@ -3,7 +3,9 @@ body.about {
   h2,
   h3,
   h4,
-  h5 {
+  h5,
+  h6,
+  h7 {
     font-family: 'Pragmatica', Helvetica, Arial, sans-serif;
     font-weight: 700;
   }
@@ -43,6 +45,33 @@ body.about {
     line-height: 79px;
     color: white;
   }
+  h6 {
+    position: absolute;
+    width: 629px;
+    height: 130px;
+    margin-left: 120px;
+    top: 4300px;
+    font-size: 150px;
+    line-height: 79px;
+    color: red;
+  }
+  h7 {
+    position: absolute;
+    width: 629px;
+    height: 130px;
+    margin-left: 980px;
+    top: 4300px;
+    font-size: 150px;
+    line-height: 79px;
+    color: red;
+  }
+  .image {
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    margin-top: 1360px;
+    margin-left: 50px;
+    background-image: url('images/circle.png');
+  }
   .p1 {
     width: 720px;
     height: 60px;
@@ -67,6 +96,46 @@ body.about {
     font-size: 40px;
     line-height: 50px;
     color: white;
+  }
+  .p4 {
+    position: absolute;
+    width: 600px;
+    height: 130px;
+    margin-left: 100px;
+    top: 4020px;
+    font-size: 40px;
+    line-height: 50px;
+    color: black;
+  }
+  .p5 {
+    position: absolute;
+    width: 500px;
+    height: 100px;
+    margin-left: 930px;
+    top: 4020px;
+    font-size: 40px;
+    line-height: 50px;
+    color: black;
+  }
+  .p6 {
+    position: absolute;
+    width: 560px;
+    height: 100px;
+    margin-left: 120px;
+    top: 4460px;
+    font-size: 40px;
+    line-height: 50px;
+    color: black;
+  }
+  .p7 {
+    position: absolute;
+    width: 560px;
+    height: 100px;
+    margin-left: 980px;
+    top: 4460px;
+    font-size: 40px;
+    line-height: 50px;
+    color: black;
   }
   #rec1 {
     position: absolute;
@@ -317,6 +386,14 @@ body.about {
     border: 1.5px;
     border-style: solid;
     border-color: --black;
+    border-radius: 10px;
+  }
+  #rec25 {
+    position: absolute;
+    width: 100%;
+    height: 800px;
+    top: 4700px;
+    background-color: black;
     border-radius: 10px;
   }
 }
