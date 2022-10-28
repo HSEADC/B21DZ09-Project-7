@@ -2,39 +2,158 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
-    <title>Картотека настольных игр</title>
+    <title>О нас</title>
     <analytics></analytics>
   </head>
-  <body class="index">
-    <nav class="navbar">
-      <div class="container">
-        <h3>ИГРОТЕКА</h3>
-        <div class="navbar-wrap">
-          <ul class="navbar-menu">
-            <li><a href="about.html">О нас</a></li>
-            <li>Статьи</li>
-          </ul>
-        </div>
+  <body class="about">
+  <nav class="navbar">
+    <div class="container">
+      <h3>ИГРОТЕКА</h3>
+      <div class="navbar-wrap">
+        <ul class="navbar-menu">
+          <li><a href="about.html">Концепция</a></li>
+          <li>Статьи</li>
+        </ul>
       </div>
-    </nav>
-    <h1>Концепт</h1>
-    <div class="p1">
-      Наша команда собрала в одном месте правила различных настольных игр.Также
-      пользователь может подобрать с помощью фильтров, если не знает какую
-      выбрать.
     </div>
-    <div id="rec1"></div>
-    <div id="rec2"></div>
-    <div id="rec3"></div>
-    <div id="rec4"></div>
-    <div id="rec5"></div>
-    <div id="rec6"></div>
-    <div id="rec7"></div>
-    <div id="rec8"></div>
-    <div id="rec9"></div>
-    <div id="rec10"></div>
-    <div id="rec11"></div>
-    <div id="rec12"></div>
-    <div id="rec13"></div>
+  </nav>
+      <h1>Игротека</h1>
+      <div id="rec1"></div>
+      <div id="rec2"></div>
+      <div id="rec3"></div>
+      <div id="rec4"></div>
+      <div id="rec5"></div>
+
+      <div class="p1">
+        <p>Картотека настольных игр — облегчит увлекательный командный процесс</p>
+      </div>
+
+      <div id="el1"></div>
+      <div id="el2"></div>
+      <div id="el3"></div>
+      <div id="el4"></div>
+      <div id="el5"></div>
+      <div id="el6"></div>
+      <div id="el7"></div>
+      <div id="el8"></div>
+      <div id="el9"></div>
+      <div id="el10"></div>
+      <div id="el11"></div>
+
+      <img class="image" src="images/card.png" alt="card" />
+
+      <div id="rec6"></div>
+      <div id="rec7"></div>
+      <div id="rec8"></div>
+      <div id="star"></div>
+      <div id="rec9"></div>
+      <div id="rec10"></div>
+      <div id="rec11"></div>
+      <div id="rec12"></div>
+      <div id="rec13"></div>
+      <div id="rec14"></div>
+      <div id="rec15"></div>
+      <div id="rec16"></div>
+
+      <h2>Найди настольную игру</h2>
+      <div class="p2">
+        <p>
+          С помощью фильтров можно настроить выборку игр под необходимые условия и
+          вкус
+        </p>
+      </div>
+      <h2 class="block">Узнай правила</h2>
+      <div class="p3">
+        <p>
+          Зайдя в карточку игры, пользователь обнаруживает описание, правила,
+          комплектацию и историю создания.
+        </p>
+      </div>
+      <img class="phone" src="images/phone.png" alt="phone" />
+      <div id="rec17"></div>
+      <div id="rec18"></div>
+      <h4>Прочти подборку статей</h4>
+      <div class="p4">
+        <p>
+          Помимо процесса позрания игр пользователь может погрузиться в мир
+          настолок, прочитав статьи, в которых рассказывается о новинках и
+          событиях.
+        </p>
+      </div>
+
+      <img class="phone1" src="images/phone1.png" alt="phone" />
+      <div id="rec19"></div>
+      <div id="rec20"></div>
+      <div id="rec21"></div>
+      <div id="rec22"></div>
+      <div id="rec23"></div>
+      <div id="rec24">
+        <span id="subss">Подпишись, чтобы не пропустить запуск</span>
+
+        <!-- modify this form HTML and place wherever you want your form -->
+        <form id="my-form" action="https://formspree.io/f/mjvzagpr" method="POST">
+          <label></label>
+          <label>
+            <input
+              class="sub__input"
+              type="email"
+              name="email"
+              placeholder="Ваш E-mail"
+            />
+          </label>
+          <button class="sub__btn" type="submit">Подписаться</button>
+          <p id="my-form-status"></p>
+        </form>
+        <!-- Place this script at the end of the body tag -->
+        <script>
+          var form = document.getElementById('my-form')
+
+          async function handleSubmit(event) {
+            event.preventDefault()
+            var status = document.getElementById('my-form-status')
+            var data = new FormData(event.target)
+            fetch(event.target.action, {
+              method: form.method,
+              body: data,
+              headers: {
+                Accept: 'application/json'
+              }
+            })
+              .then((response) => {
+                if (response.ok) {
+                  status.innerHTML = ''
+                  form.reset()
+                } else {
+                  response.json().then((data) => {
+                    if (Object.hasOwn(data, 'errors')) {
+                      status.innerHTML = data['errors']
+                        .map((error) => error['message'])
+                        .join(', ')
+                    } else {
+                      status.innerHTML = ''
+                    }
+                  })
+                }
+              })
+              .catch((error) => {
+                status.innerHTML = ''
+              })
+          }
+          form.addEventListener('submit', handleSubmit)
+        </script>
+      </div>
+      <footer>
+        <div class="school">
+          <span>@2022</span>
+          <span>HSE ART AND DESIGN SCHOOL</span>
+          <span>Дизайн и программирование</span>
+        </div>
+        <div class="vk">
+          <a href="https://vk.com/public216711266"
+            ><img src="images/vk.png" alt=""
+          /></a>
+        </div>
+      </footer>
+    </footer>
   </body>
 </html>
