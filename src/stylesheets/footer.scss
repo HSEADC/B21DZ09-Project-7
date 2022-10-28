@@ -1,0 +1,23 @@
+footer {
+  margin-top: 2700px;
+  height: 110px;
+  background-color: black;
+  display: flex;
+  height: 300px;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.vk {
+  margin-top: 60px;
+  width: 10%;
+  margin-right: 20px;
+  background-image: url('images/vk.png');
+}
+.school {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Pragmatica';
+  font-size: 30px;
+  color: white;
+  justify-content: flex-end;
+}
