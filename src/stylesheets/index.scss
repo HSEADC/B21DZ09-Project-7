@@ -525,3 +525,18 @@ body.index {
     background: black;
   }
 }
+@media (max-width: 1920px) {
+  body.index {
+    max-width: 1440px;
+  }
+}
+@media (max-width: 1366px) {
+  body.index {
+    max-width: 1024px;
+  }
+}
+@media (max-width: 768px) {
+  body.index {
+    max-width: none;
+  }
+}

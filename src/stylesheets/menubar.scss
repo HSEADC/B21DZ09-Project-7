@@ -29,7 +29,21 @@
   margin-left: 62px;
   color: black;
 }
-
+@media (max-width: 1920px) {
+  .navbar {
+    max-width: 1440px;
+  }
+}
+@media (max-width: 1366px) {
+  .navbar {
+    max-width: 1024px;
+  }
+}
+@media (max-width: 768px) {
+  .navbar {
+    max-width: none;
+  }
+}
 // .header h3 {
 //   font-family: 'Pragmatica', Helvetica, Arial, sans-serif;
 //   font-weight: 700;
