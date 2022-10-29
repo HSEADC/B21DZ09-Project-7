@@ -17,24 +17,3 @@ body {
   width: 100%;
   height: 80px;
 }
-
-@media (max-width: 1440px) {
-  body {
-    max-width: 1200px;
-  }
-}
-@media (max-width: 1200px) {
-  body {
-    max-width: 975px;
-  }
-}
-@media (max-width: 920px) {
-  body {
-    max-width: 750px;
-  }
-}
-@media (max-width: 767px) {
-  body {
-    max-width: none;
-  }
-}

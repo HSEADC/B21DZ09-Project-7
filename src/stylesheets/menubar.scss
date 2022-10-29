@@ -30,26 +30,6 @@
   color: black;
 }
 
-@media (max-width: 1440px) {
-  .navbar {
-    max-width: 1200px;
-  }
-}
-@media (max-width: 1200px) {
-  .navbar {
-    max-width: 975px;
-  }
-}
-@media (max-width: 920px) {
-  .navbar {
-    max-width: 750px;
-  }
-}
-@media (max-width: 767px) {
-  .navbar {
-    max-width: none;
-  }
-}
 // .header h3 {
 //   font-family: 'Pragmatica', Helvetica, Arial, sans-serif;
 //   font-weight: 700;

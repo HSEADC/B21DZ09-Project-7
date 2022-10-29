@@ -20,24 +20,3 @@ footer {
   color: white;
   justify-content: flex-end;
 }
-
-@media (max-width: 1440px) {
-  footer {
-    max-width: 1200px;
-  }
-}
-@media (max-width: 1200px) {
-  footer {
-    max-width: 975px;
-  }
-}
-@media (max-width: 920px) {
-  footer {
-    max-width: 750px;
-  }
-}
-@media (max-width: 767px) {
-  footer {
-    max-width: none;
-  }
-}

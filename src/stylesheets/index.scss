@@ -525,23 +525,3 @@ body.index {
     background: black;
   }
 }
-@media (max-width: 1440px) {
-  body.index {
-    max-width: 1200px;
-  }
-}
-@media (max-width: 1200px) {
-  body.index {
-    max-width: 975px;
-  }
-}
-@media (max-width: 920px) {
-  body.index {
-    max-width: 750px;
-  }
-}
-@media (max-width: 767px) {
-  body.index {
-    max-width: none;
-  }
-}

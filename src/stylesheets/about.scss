@@ -621,24 +621,3 @@ body.about {
     border-radius: 10px;
   }
 }
-
-@media (max-width: 1440px) {
-  body.about {
-    max-width: 1200px;
-  }
-}
-@media (max-width: 1200px) {
-  body.about {
-    max-width: 975px;
-  }
-}
-@media (max-width: 920px) {
-  body.about {
-    max-width: 750px;
-  }
-}
-@media (max-width: 767px) {
-  body.about {
-    max-width: none;
-  }
-}
