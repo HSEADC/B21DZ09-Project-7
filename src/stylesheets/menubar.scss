@@ -1,5 +1,5 @@
 .navbar {
-  width: 100%;
+  max-width: 100%;
   height: 70px;
   box-shadow: 0 0px 10px rgba(0, 0, 0);
 }
@@ -28,6 +28,26 @@
   top: 65px;
   margin-left: 62px;
   color: black;
+}
+@media (max-width: 1440px) {
+  .navbar {
+    max-width: 1200px;
+  }
+}
+@media (max-width: 1200px) {
+  .navbar {
+    max-width: 975px;
+  }
+}
+@media (max-width: 920px) {
+  .navbar {
+    max-width: 750px;
+  }
+}
+@media (max-width: 767px) {
+  .navbar {
+    max-width: none;
+  }
 }
 // .header h3 {
 //   font-family: 'Pragmatica', Helvetica, Arial, sans-serif;
